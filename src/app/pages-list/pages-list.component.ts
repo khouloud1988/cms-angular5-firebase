@@ -9,7 +9,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./pages-list.component.css']
 })
 export class PagesListComponent implements OnInit {
-   pagesObservable: Observable<any[]>;
+  title = 'cms-angular5-firebase';
+  pagesObservable: Observable<any[]>;
   constructor(private db: AngularFireDatabase) { }
 
   ngOnInit() {
